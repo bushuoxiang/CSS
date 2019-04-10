@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			.my-container{
+				height: 200px;
+				width: 200px;
+				margin: 300px auto;
+				/*background: url(img/u=2735633715,2749454924&fm=27&gp=0.jpg);*/
+				
+			}
+			.photo{
+				height: 100%;
+				width: 200px;
+				perspective: 1200px;
+				perspective-origin: -5px -300px;
+			}
+			.container{
+				height: 200px;
+				width: 200px;
+				transform-style: preserve-3d;
+				position: relative;
+				animation: zhuan 5s linear infinite;
+				cursor: pointer;
+			}
+			
+			/*.container:hover .img1{
+				transform: translateZ(200px);
+			}
+			.container:hover .img2{
+				transform: translateZ(-200px);
+			}
+			.container:hover .img3{
+				transform: rotateY(90deg) translateZ(200px);
+			}
+			.container:hover .img4{
+				transform: rotateY(-90deg) translateZ(200px);
+			}
+			.container:hover .img5{
+				transform: rotateX(90deg) translateZ(200px);
+			}
+			.container:hover .img6{
+				transform: rotateX(-90deg) translateZ(200px);
+			}*/
+			.img{
+				height: 200px;
+				width: 200px;
+				/*background-color: black;*/
+				position: absolute;
+				border-radius: 30px;
+				
+			}
+			img{
+				height: 200px;
+				width: 200px;
+				border-radius: 20px;
+			}
+			
+			.img1{
+				transform: translateZ(100px);
+				/*background-color: red;*/
+				/*background: url(img/timg.jpg);*/
+				transition: 1s linear;
+				animation: zhuan1 2s linear;
+			}
+			@keyframes zhuan1{
+				50%{
+					transform: translateZ(200px);
+				}
+				100%{
+					transform: translateZ(100px);
+				}
+			}
+			.img2{
+				transform: translateZ(-100px);
+				background-color: blue;
+				transition: 1s linear;
+				animation: zhuan2 2s  linear 2s;
+			}
+			@keyframes zhuan2{
+				50%{
+					transform: translateZ(-200px);
+				}
+				100%{
+					transform: translateZ(-100px);
+				}
+			}
+			
+			.img3{
+				transform: rotateY(90deg) translateZ(100px) ;
+				background-color: yellow;
+				transition: 1s linear;
+				animation: zhuan3 2s  linear 4s;
+			}
+			@keyframes zhuan3{
+				50%{
+					transform: rotateY(90deg) translateZ(200px);
+				}
+				100%{
+					transform: rotateY(90deg) translateZ(100px);
+				}
+			}
+			.img4{
+				transform: rotateY(-90deg) translateZ(100px) ;
+				background-color: green;
+				transition: 1s linear;
+				animation: zhuan4 2s  linear 6s;
+			}
+			@keyframes zhuan4{
+				50%{
+					transform: rotateY(-90deg) translateZ(200px);
+				}
+				100%{
+					transform: rotateY(-90deg) translateZ(100px);
+				}
+			}
+			.img5{
+				transform: rotateX(90deg) translateZ(100px)  ;
+				background-color: pink;
+				transition: 1s linear;
+				animation: zhuan5 2s  linear 8s;
+			}
+			@keyframes zhuan5{
+				50%{
+					transform: rotateX(90deg) translateZ(200px);
+				}
+				100%{
+					transform: rotateX(90deg) translateZ(100px);
+				}
+			}
+			.img6{
+				transform: rotateX(-90deg) translateZ(100px);
+				background-color: black;
+				transition: 1s linear;
+				animation: zhuan6 2s  linear 10s;
+			}
+			@keyframes zhuan6{
+				50%{
+					transform: rotateX(-90deg) translateZ(200px);
+				}
+				100%{
+					transform: rotateX(-90deg) translateZ(100px);
+				}
+			}
+			@keyframes zhuan{
+				from{
+					transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+				}
+				to{
+					transform: rotateX(360deg) rotateY(360deg) rotateZ(0deg);
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="my-container">
+			<div class="photo">
+				<div class="container">
+					<div class="img img1">
+						<img src="img/qiutian.jpg"/>
+					</div>
+					<div class="img img2">
+						<img src="img/shalou.jpg"/>
+					</div>
+					<div class="img img3">
+						<img src="img/shatan.jpg"/>
+					</div>
+					<div class="img img4">
+						<img src="img/shumu.jpg"/>
+					</div>
+					<div class="img img5">
+						<img src="img/timg (1).jpg"/>
+					</div>
+					<div class="img img6">
+						<img src="img/timg (2).jpg"/>
+					</div>
+					<div class="img11">
+						<img src="img/timg.jpg"/>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

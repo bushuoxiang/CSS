@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin:0px;
+				padding: 0px;
+			}
+			.my-container{
+				width: 100%;
+				height: 260px;
+				margin: 0px auto;
+				/*background-color: red;*/
+				margin-top: 250px;
+			}
+			.photo{
+				height: 100%;
+				width: 100%;
+				perspective: 1200px;
+				perspective-origin: 750px -1000px;
+			}
+			.container{
+				height: 100%;
+				width: 180px;
+				transform-style:preserve-3d ;
+				margin: 0px auto;
+			}
+			.img{
+				height: 260px;
+				width: 180px;
+				/*background-color: red;*/
+				position: absolute;
+				
+			}
+			.img1{
+				background-color: red;
+				transform: translateZ(0px);
+				animation: zhuan1 7s linear forwards ;
+			}
+			@keyframes zhuan1{
+			14.28%{
+				transform: translateX(-212.1px) translateZ(212.1px) rotateY(-45deg);
+			}
+			28.56%{
+				transform: translateX(-300px) translateZ(0px) rotateY(-90deg);
+			}
+			42.84%{
+				transform: translateX(-212.1px) translateZ(-212.2px) rotateY(-135deg);
+			}
+			57.12%{
+				transform: translateX(0px) translateZ(-300px) rotateY(-180deg);
+			}
+			71.4%{
+				transform: translateX(212.1px) translateZ(-212.1px) rotateY(-225deg);
+			}
+			85.68%{
+				transform: translateX(300px) translateZ(0px) rotateY(-270deg);
+			}
+			100%{
+				transform: translateX(212.1px) translateZ(212.1px) rotateY(-315deg);
+			}
+			}
+			.img2{
+				background-color: yellow;
+				transform: translateZ(-10px);
+				animation: zhuan2 6s linear forwards 1s;
+			}
+			@keyframes zhuan2{
+			16.6;%{
+				transform: translateX(-212.1px) translateZ(212.1px) rotateY(-45deg);
+			}
+			33.2%{
+				transform: translateX(-300px) translateZ(0px) rotateY(-90deg);
+			}
+			49.8%{
+				transform: translateX(-212.1px) translateZ(-212.2px) rotateY(-135deg);
+			}
+			66.4%{
+				transform: translateX(0px) translateZ(-300px) rotateY(-180deg);
+			}
+			82%{
+				transform: translateX(212.1px) translateZ(-212.1px) rotateY(-225deg);
+			}
+			100%{
+				transform: translateX(300px) translateZ(0px) rotateY(-270deg);
+			}
+			
+			}
+			.img3{
+				background-color: aqua;
+				transform: translateZ(-20px);
+				animation: zhuan3 5s linear forwards 2s;
+			}
+			@keyframes zhuan3{
+			20%{
+				transform: translateX(-212.1px) translateZ(212.1px) rotateY(-45deg);
+			}
+			40%{
+				transform: translateX(-300px) translateZ(0px) rotateY(-90deg);
+			}
+			60%{
+				transform: translateX(-212.1px) translateZ(-212.2px) rotateY(-135deg);
+			}
+			80%{
+				transform: translateX(0px) translateZ(-300px) rotateY(-180deg);
+			}
+			100%{
+				transform: translateX(212.1px) translateZ(-212.1px) rotateY(-225deg);
+			}
+			
+			}
+			.img4{
+				background-color: deeppink;
+				transform: translateZ(-30px);
+				animation: zhuan4 4s linear forwards 3s;
+			}
+			@keyframes zhuan4{
+			25%{
+				transform: translateX(-212.1px) translateZ(212.1px) rotateY(-45deg);
+			}
+			50%{
+				transform: translateX(-300px) translateZ(0px) rotateY(-90deg);
+			}
+			75%{
+				transform: translateX(-212.1px) translateZ(-212.2px) rotateY(-135deg);
+			}
+			100%{
+				transform: translateX(0px) translateZ(-300px) rotateY(-180deg);
+			}
+			
+			}
+			.img5{
+				background-color: blue;
+				transform: translateZ(-40px);
+				animation: zhuan5 3s linear forwards 4s;
+			}
+			@keyframes zhuan5{
+			33.3%{
+				transform: translateX(-212.1px) translateZ(212.1px) rotateY(-45deg);
+			}
+			66.6%{
+				transform: translateX(-300px) translateZ(0px) rotateY(-90deg);
+			}
+			100%{
+				transform: translateX(-212.1px) translateZ(-212.2px) rotateY(-135deg);
+			}
+			}
+			
+			.img6{
+				background-color: forestgreen;
+				transform: translateZ(-50px);
+				animation: zhuan6 2s linear forwards 5s;
+			}
+			
+			.img7{
+				background-color: gray;
+				transform: translateZ(-60px);
+				animation: zhuan7 1s linear forwards 6s;
+			}
+			.img8{
+				background-color: lightseagreen;
+				transform: translateZ(-70px);
+				animation: zhuan8 0.5s linear forwards 7s;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="my-container">
+			<div class="photo">
+				<div class="container">
+					<div class="img img1"></div>
+					<div class="img img2"></div>
+					<div class="img img3"></div>
+					<div class="img img4"></div>
+					<div class="img img5"></div>
+					<div class="img img6"></div>
+					<div class="img img7"></div>
+					<div class="img img8"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
